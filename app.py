@@ -64,7 +64,7 @@ def accueil():
             st.header("***Bienvenue sur ma page citronnée!***")
             st.image("https://www.bioceno.be/wp-content/uploads/2019/11/citrons-3.jpg")
         elif selected == "Photos":
-            st.header("***Bienvenue sur mon album photo***")
+            st.header("***Mon album photo***")
             # Création de 3 colonnes
             col1, col2, col3 = st.columns(3)
 
@@ -85,9 +85,9 @@ def accueil():
                 # Le bouton de déconnexion
 
     elif st.session_state["authentication_status"] is False:
-        st.error("L'username ou le password est/sont incorrect")
+        st.error("L'username ou le password est/sont incorrect.s")
     elif st.session_state["authentication_status"] is None:
-        st.warning('Les champs username et mot de passe doivent être remplie')
+        st.warning('Les champs username et mot de passe doivent être renseignés')
 
 
 accueil()
